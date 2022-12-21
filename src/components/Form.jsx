@@ -49,7 +49,7 @@ const Form = () => {
     <main>
       <header>
         <h1 className="logo">
-          Current<span className="x">-X</span>
+          X<span className="x">-current</span>
         </h1>
         <i className="currency">
           <RiCurrencyFill />
@@ -91,7 +91,10 @@ const Form = () => {
         </button>
       </section>
 
-      <Result convertedAmount={convertedAmount} convertedCurrency={toCurrency} />
+      <Result
+        convertedAmount={convertedAmount}
+        convertedCurrency={toCurrency}
+      />
     </main>
   );
 };

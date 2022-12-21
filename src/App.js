@@ -1,7 +1,5 @@
 import "./App.css";
 import Form from "./components/Form";
-import Test from "./components/test";
-import DynamicApiOPtion from "./components/test";
 
 function App() {
   return (

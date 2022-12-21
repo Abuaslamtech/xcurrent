@@ -21,12 +21,12 @@
   }
 
   .logo {
-    color: var(--primary);
+    color: var(--special);
     font-weight: bold;
     font-size: 3.3rem;
   }
   .x {
-    color: var(--special);
+    color: var(--primary);
   }
   .currency {
     color: var(--primary);
@@ -49,9 +49,8 @@
     margin-bottom: 2rem;
     padding: 1rem;
   }
-  input{
+  input {
     padding: 0;
-
   }
   label {
     color: var(--primary);
@@ -71,7 +70,7 @@
 
   /* Result page */
   .rmain {
-    margin:1rem;
+    margin: 1rem;
   }
   .rhead {
     display: flex;
@@ -83,7 +82,7 @@
     font-size: 1.3rem;
     color: var(--primary);
   }
-  .rmain{
+  .rmain {
     color: var(--special);
   }
   .result {
