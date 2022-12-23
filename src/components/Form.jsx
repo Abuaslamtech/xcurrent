@@ -2,6 +2,7 @@ import { RiCurrencyFill } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import Dropdown from "./Dropdown";
 import Result from "./Result";
+import Footer from "./Footer";
 
 var myHeaders = new Headers();
 myHeaders.append("apikey", "TExse0ipTvDMY7tnz0HrLJMfmPxUMzlW");
@@ -78,10 +79,12 @@ const Form = () => {
         </div>
 
         <div className="amount">
+          <label htmlFor="to">Amount</label>
+          <br />
           <input
             type="number"
             value={amount}
-            placeholder="Amount"
+            placeholder="   for example 50000"
             onChange={(e) => setAmount(e.target.value)}
           />
         </div>
@@ -95,6 +98,8 @@ const Form = () => {
         convertedAmount={convertedAmount}
         convertedCurrency={toCurrency}
       />
+
+      <Footer />
     </main>
   );
 };
