@@ -74,6 +74,7 @@ button {
 /* Result page */
 .rmain {
   margin: 1rem 1rem 5rem 1rem;
+  margin-bottom: 10rem;
 }
 .rhead {
   display: flex;
@@ -121,6 +122,8 @@ footer {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
   background-color: var(--primary);
   padding: 2rem;
@@ -186,11 +189,12 @@ textarea{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: auto;
 }
 .soon{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 /* Web view */

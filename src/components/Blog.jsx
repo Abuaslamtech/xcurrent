@@ -2,9 +2,9 @@ import soon from "../pictures/soon.png";
 
 const Blog = () => {
   return <div className="blogp">
-    <img src={soon} alt="coming soon" className="soon"/>
+    <img src={soon} alt={soon} className="soon" />
     Coming soon ...
-  </div>;
+  </div>
 };
 
 export default Blog;
