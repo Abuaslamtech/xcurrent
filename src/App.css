@@ -74,7 +74,7 @@ button {
 /* Result page */
 .rmain {
   margin: 1rem 1rem 5rem 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 .rhead {
   display: flex;
@@ -160,7 +160,7 @@ h2 {
 }
 
 /* About page */
-.about{
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -168,31 +168,33 @@ h2 {
   margin: auto;
 }
 
-textarea{
+textarea {
   width: 83vw;
   height: 10vh;
 }
-.input, .button, textarea{
+.input,
+.button,
+textarea {
   margin: 1rem;
 }
-.button{
+.button {
   background-color: var(--primary);
   color: var(--secondary);
-   margin-bottom: 6rem;
+  margin-bottom: 6rem;
 }
-.btnonclick{
+.btnonclick {
   background-color: var(--special);
 }
 /* blog page */
-.blogp{
- display: flex;
+.blogp {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: auto;
 }
-.soon{
+.soon {
   width: 300px;
   height: 300px;
 }
