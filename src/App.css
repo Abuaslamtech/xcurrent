@@ -113,13 +113,14 @@ button {
 }
 /* footer */
 footer {
-  width: 50vw;
   height: 0.2rem;
   display: flex;
   width: 70vw;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  bottom: 0;
   margin: auto;
   background-color: var(--primary);
   padding: 2rem;
@@ -181,12 +182,11 @@ textarea{
 }
 /* blog page */
 .blogp{
-  display: flex;
+ display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-top: auto;
-  margin-bottom: 7rem;
+  align-items: center;
+  margin: auto;
 }
 .soon{
   width: 400px;
