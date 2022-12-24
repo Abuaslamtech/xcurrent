@@ -72,7 +72,7 @@ button {
 
 /* Result page */
 .rmain {
-  margin: -1rem 1rem 2rem 1rem;
+  margin: -1rem 1rem 5rem 1rem;
 }
 .rhead {
   display: flex;
@@ -120,10 +120,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1rem;
   background-color: var(--primary);
   padding: 2rem;
   border-radius: 1rem;
@@ -177,7 +173,7 @@ textarea{
 .button{
   background-color: var(--primary);
   color: var(--secondary);
-   margin-bottom: 4rem;
+   margin-bottom: 6rem;
 }
 .btnonclick{
   background-color: var(--special);
