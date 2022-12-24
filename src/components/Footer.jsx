@@ -1,34 +1,50 @@
-const Footer = () => {
-  let blog = document.getElementById("blog");
-  let home = document.getElementById("home");
-  let cont = document.getElementById("cont");
+import { Link } from "react-router-dom";
+import { MdPersonPin, MdArticle } from "react-icons/md";
+import { ImHome } from "react-icons/im";
+import { useState } from "react";
 
-  function handleBlogClick() {
-    home.classList.remove("clicked");
-    blog.classList.add("clicked");
-    cont.classList.remove("clicked");
+const Footer = () => {
+  const [selected, setSelected] = useState(null);
+
+  function handleClick(id) {
+    setSelected(id);
   }
-  function handleHomeClick() {
-    home.classList.add("clicked");
-    blog.classList.remove("clicked");
-    cont.classList.remove("clicked");
-  }
-  function handleContClick() {
-    home.classList.remove("clicked");
-    blog.classList.remove("clicked");
-    cont.classList.add("clicked");
-  }
+
   return (
     <footer>
-      <div id="blog" className="blog" onClick={handleBlogClick}>
-        Blog
-      </div>
-      <div id="home" className="home clicked" onClick={handleHomeClick}>
-        Home
-      </div>
-      <div id="cont" className="about" onClick={handleContClick}>
-        Contact
-      </div>
+      <Link to="/blog">
+        <div
+          id="blog"
+          className={selected === 1 ? "clicked" : "blog"}
+          onClick={() => handleClick(1)}
+        >
+          <i className="ficon">
+            <MdArticle />
+          </i>
+        </div>
+      </Link>
+      <Link to="/">
+        <div
+          id="home"
+          className={selected === 2 ? "clicked" : "home"}
+          onClick={() => handleClick(2)}
+        >
+          <i className="ficon">
+            <ImHome />
+          </i>
+        </div>
+      </Link>
+      <Link to="/about">
+        <div
+          id="about"
+          className={selected === 3 ? "clicked" : "about"}
+          onClick={() => handleClick(3)}
+        >
+          <i className="ficon">
+            <MdPersonPin />
+          </i>
+        </div>
+      </Link>
     </footer>
   );
 };

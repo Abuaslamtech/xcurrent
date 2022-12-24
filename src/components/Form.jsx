@@ -1,8 +1,7 @@
-import { RiCurrencyFill } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import Dropdown from "./Dropdown";
 import Result from "./Result";
-import Footer from "./Footer";
+
 
 var myHeaders = new Headers();
 myHeaders.append("apikey", "TExse0ipTvDMY7tnz0HrLJMfmPxUMzlW");
@@ -48,15 +47,6 @@ const Form = () => {
 
   return (
     <main>
-      <header>
-        <h1 className="logo">
-          X<span className="x">-current</span>
-        </h1>
-        <i className="currency">
-          <RiCurrencyFill />
-        </i>
-      </header>
-
       <section className="inputs">
         <div className="from">
           <label htmlFor="from">From</label>
@@ -98,8 +88,6 @@ const Form = () => {
         convertedAmount={convertedAmount}
         convertedCurrency={toCurrency}
       />
-
-      <Footer />
     </main>
   );
 };
