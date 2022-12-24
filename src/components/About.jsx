@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section className="about">
       <div className="picture">
-        <img src={Abuaslam} alt="Abdullahi Ismail(Abuaslam)" />
+        <h2>Contact Us</h2>
       </div>
 
       <div className="info"></div>
