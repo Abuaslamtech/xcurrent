@@ -8,6 +8,7 @@ body {
   margin: 1rem;
   padding: 0;
   border: 0;
+  height: fit-content;
 }
 
 /* Form page */
@@ -72,7 +73,7 @@ button {
 
 /* Result page */
 .rmain {
-  margin: -1rem 1rem 5rem 1rem;
+  margin: 1rem 1rem 5rem 1rem;
 }
 .rhead {
   display: flex;
@@ -179,12 +180,17 @@ textarea{
   background-color: var(--special);
 }
 /* blog page */
-.blog{
+.blogp{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: auto;
+  margin-bottom: 7rem;
+}
+.soon{
+  width: 400px;
+  height: 400px;
 }
 
 /* Web view */

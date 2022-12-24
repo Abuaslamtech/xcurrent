@@ -1,8 +1,8 @@
 import soon from "../pictures/soon.png";
 
 const Blog = () => {
-  return <div className="blog">
-    <img src={soon} alt="coming soon" />
+  return <div className="blogp">
+    <img src={soon} alt="coming soon" className="soon"/>
     Coming soon ...
   </div>;
 };
