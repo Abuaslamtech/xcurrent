@@ -1,9 +1,7 @@
-import Abuaslam from "../pictures/abuaslam.jpg";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const About = () => {
-  
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -24,7 +22,6 @@ const About = () => {
         }
       );
   };
-
 
   return (
     <section className="about">
@@ -49,7 +46,12 @@ const About = () => {
             className="input"
           />
           <textarea name="message" placeholder="Type your message here ..." />
-          <input type="submit" value="Send" className="button" onClick={(e) => e.target.classList.add("btnonclick")} />
+          <input
+            type="submit"
+            value="Send"
+            className="button"
+            onClick={(e) => e.target.classList.add("btnonclick")}
+          />
         </form>
       </div>
     </section>
